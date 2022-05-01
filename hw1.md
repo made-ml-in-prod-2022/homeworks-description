@@ -38,11 +38,11 @@
 12) В проекте зафиксированы все зависимости (1 балл)
 13) Настроен CI для прогона тестов, линтера на основе github actions (3 балла).
 Пример с пары: https://github.com/demo-ml-cicd/ml-python-package
-14) Используется hydra  (https://hydra.cc/docs/intro/) (3 балла - доп баллы)
 
 PS: Можно использовать cookiecutter-data-science  https://drivendata.github.io/cookiecutter-data-science/ , но поудаляйте папки, в которые вы не вносили изменения, чтобы не затруднять ревью
 
 Дополнительные баллы=)
+- Используйте hydra для конфигурирования (https://hydra.cc/docs/intro/) - 3 балла
 
 Mlflow
 - разверните локально mlflow или на какой-нибудь виртуалке (1 балл)
