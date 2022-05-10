@@ -1,0 +1,8 @@
+input_data_path: "./data/raw/heart_cleveland_upload.csv"
+output_model_path: "./models/model.pkl"
+metric_path: "./models/metrics.json"
+report_path: "./reports/report_lgb.json"
+splitting_params:
+  val_size: 0.1
+  test_size: 0.1
+  random_state: 3

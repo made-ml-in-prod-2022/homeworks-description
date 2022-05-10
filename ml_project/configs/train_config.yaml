@@ -1,0 +1,32 @@
+input_data_path: "./data/raw/heart_cleveland_upload.csv"
+output_model_path: "./models/model.pkl"
+report_path: "./reports/report_lgb.json"
+splitting_params:
+  val_size: 0.1
+  test_size: 0.1
+  random_state: 3
+train_params:
+  random_state: 0
+  model: 'lightgbm'
+  param_dict: {
+    n_estimators: 50,
+    min_child_samples: 5
+  }
+feature_params:
+  build_features_inplace: False
+  categorical_features:
+    - "ca"
+    - "thal"
+    - "slope"
+    - "exang"
+    - "restecg"
+    - "fbs"
+    - "cp"
+    - "sex"
+  numerical_features:
+    - "oldpeak"
+    - "thalach"
+    - "chol"
+    - "trestbps"
+    - "age"
+  target_name: "condition"
